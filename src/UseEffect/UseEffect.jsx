@@ -16,7 +16,7 @@ const H2 = styled.h2`
 
 const UseEffect = () => {
 
-    const [advice, setAdvice] = useState('');
+    const [advice, setAdvice] = useState("");
     
     useEffect(() => {
       const url = "https://api.adviceslip.com/advice";
@@ -24,7 +24,7 @@ const UseEffect = () => {
       const fetchData = async()=> {
         const res = await fetch(url);
         const data = await res.json();
-        setAdvice(data.slip.advice);
+        setAdvice(data);
       }
       fetchData();
     }, [])
@@ -33,7 +33,7 @@ const UseEffect = () => {
         <> 
         <Main>
         <H1>fetch api with useEffect</H1>
-        <H2>{advice}</H2>
+        <H2>{JSON.stringify(advice)}</H2>
         </Main>
       
         </>
