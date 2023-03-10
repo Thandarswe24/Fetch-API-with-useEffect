@@ -5,7 +5,7 @@ import UseEffect from './UseEffect/UseEffect'
 const App = () => {
   return (
     <div>
-      {/* <UseEffect/> */}
+      <UseEffect/>
       <DummyApi/>
     </div>
   )
