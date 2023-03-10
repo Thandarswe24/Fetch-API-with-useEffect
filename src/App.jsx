@@ -6,9 +6,9 @@ import User from './UseEffect/User'
 const App = () => {
   return (
     <div>
+      <UseEffect/>
       <User/>
-      {/* <UseEffect/> */}
-      {/* <DummyApi/> */}
+      <DummyApi/>
     </div>
   )
 }
